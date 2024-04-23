@@ -2,14 +2,17 @@ import { createRouter, createWebHistory } from 'vue-router'
 import login from '../views/Login.vue';
 import home from '../views/Home.vue';
 import Kontak from '../views/Kontak.vue';
-import produk from '../views/Produk.vue';
-import PengaturanAdmin from '../views/PengaturanAdmin.vue';
+import produkViews from '../views/Produk.vue';
+import Informasi from '../views/Informasi.vue'
 import LayoutAdmin from '../layout/layout.vue'
 import admin from '../views/admin/dashboard.vue';
 import tabel from '../views/tabel/tabel_user.vue';
 import profile from '../views/admin/profile.vue';
 import kontak from '../views/tabel/tabel_kontak.vue';
+import editProduk from '../views/admin/editProduk.vue';
+import addProduk from '../views/admin/addProduk.vue';
 import Produk from '../views/admin/produk.vue';
+
 
 function guardMyroute(to, from, next)
 {
@@ -50,15 +53,16 @@ const router = createRouter({
       component: Kontak
     },
     {
-      path: '/produk',
-      name: 'produk',
-      component: produk
+      path: '/produkViews',
+      name: 'produkViews',
+      component: produkViews
     },
     {
-      path: '/PengaturanAdmin',
-      name: 'PengaturanAdmin',
-      component: PengaturanAdmin
+      path: '/informasi',
+      name: 'informasi',
+      component: Informasi
     },
+
      {
       path: '/admin',
       name: 'LayoutAdmin',  
@@ -85,26 +89,21 @@ const router = createRouter({
           name: 'AdminKontak',
           component: kontak,
         },
+        {
+            path: '/admin/editProduk/:id',
+            name: 'editProduk',
+            component: editProduk,
+        },
+        {
+            path: '/admin/addProduk',
+            name: 'addProduk',
+            component: addProduk
+          },
          {
           path: '/admin/produk', 
-          name: 'produk',
+          name: 'Produk',
           component: Produk,
         },
-        // {
-        //   path: '/admin/musik', 
-        //   name: 'Musik',
-        //   component: Musik
-        // },
-        // {
-        //   path: '/admin/profile',
-        //   name: 'profile',
-        //   component: profile
-        // },
-        // {
-        //   path: '/kategori',
-        //   name: 'kategori',
-        //   component: tabkat
-        // },
       ]
     },
       

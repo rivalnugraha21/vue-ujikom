@@ -54,25 +54,35 @@ const datauser = {
       }
     },
     async fetchCurrentUser({ commit }) {
-      try {
-        const token = localStorage.getItem('token'); // Get token from localStorage
-        if (!token) {
-          throw new Error('Token not found');
-        }
+  try {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      throw new Error('Token not found');
+    }
 
-        const config = {
-          headers: {
-            'Authorization': `Bearer ${token}` // Set authorization header with token
-          }
-        };
-
-        const response = await axios.get("http://localhost:8080/api/v1/user/me", config); // Fetch user data using /me endpoint
-        commit("SET_CURRENT_USER", response.data.data); // Commit current user data to state
-      } catch (error) {
-        alert(error);
-        console.log(error);
+    const config = {
+      headers: {
+        'Authorization': `Bearer ${token}`
       }
-    },
+    };
+
+    const response = await axios.get("http://localhost:8080/api/v1/me", config);
+
+    if (response.status === 404) {
+      throw new Error('User not found');
+    }
+
+    commit("SET_CURRENT_USER", response.data.data);
+  } catch (error) {
+    if (error.response && error.response.status === 404) {
+      alert('User not found');
+    } else {
+      alert('An error occurred');
+    }
+    console.log(error);
+  }
+}
+
     
     // actions lainnya ...
   },

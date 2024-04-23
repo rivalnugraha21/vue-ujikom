@@ -31,138 +31,79 @@
   <div class="relative mb-10 pt-8 md:mb-16">
     <h2 class="mb-4 text-center font-serif text-3xl font-bold text-black-900 md:mb-6 md:text-4xl">PRODUK</h2>
   </div>
-    <div class="mx-auto grid max-w-screen-lg justify-center px-4 sm:grid-cols-2 sm:gap-6 sm:px-8 md:grid-cols-3">
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img
-            src="https://media.karousell.com/media/photos/products/2023/9/3/vnd_velg_racing_v_speed_1693758970_d33fe1b7_progressive.jpg"
-            class="h-56 w-full object-cover" alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">VELG VND V SPEED</h3>
-            <p class="mb-4 text-base font-light">Velg VND V Speed desain menarik nan elegan berbentuk bintang, finishing
-              lebih rapi terdapat beberapa pilihan warna yang menarik. Build quality cukup kokoh dengan berat total velg
-              kurang lebih 7,26 kg dan ukuran velg depan 185x14 dan belakang 215x14.. ●KEUNGGULAN: -Ber-SNI No.
-              4658:2008, ISO 9001</p>
+  <div class="mx-auto grid max-w-screen-lg justify-center px-4 sm:grid-cols-2 sm:gap-6 sm:px-8 md:grid-cols-3">
+    <article
+      class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg"
+      v-for="item in produk" :key="item.id">
+      <a href="">
+        <img :src="item.gambar" class="h-56 w-full object-cover" alt="" />
+        <div class="flex-auto px-6 py-5">
+          <span class="mb-2 flex items-center text-sm font-semibold">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
 
-          </div>
-        </a>
-      </article>
-
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img
-            src="https://cekbarang.id/image/aHR0cHM6Ly9jZi5zaG9wZWUuY28uaWQvZmlsZS81YmY5ZTdjYTdmODk2NGU0ZGNhZjVjYzA0NzdjYzA2MF90bg==.png"
-            class="h-56 w-full object-cover" alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">SHOCKBREAKER KTC</h3>
-            <p class="mb-4 text-base font-light"> Shockbreaker KTC dirancang dengan presisi untuk menghadapi tantangan
-              berat dari berbagai kondisi jalan. Ketika mengemudi di jalan yang bergelombang, berlubang, atau berbatu,
-              peran shockbreaker ini sangat penting dalam menjaga stabilitas kendaraan. Dengan penggunaan shockbreaker
-              KTC, pengemudi dan penumpang akan merasakan perbedaan signifikan dalam hal kenyamanan dan kestabilan. </p>
-
-          </div>
-        </a>
-      </article>
-
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img src="https://down-id.img.susercontent.com/file/id-11134601-23030-5e31rqmrmtovfe"
-            class="h-56 w-full object-cover" alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">KNALPOT TZM PROJECT</h3>
-            <p class="mb-4 text-base font-light">Knalpot TZM biasanya terbuat dari bahan logam seperti stainless steel
-              atau aluminium. Desainnya didesain untuk meningkatkan performa mesin dengan mengoptimalkan aliran gas
-              buang. Salah satu daya tarik utama knalpot TZM adalah suara yang dihasilkannya. Harga knalpot TZM bisa
-              bervariasi tergantung pada merek, desain, dan material. Knalpot aftermarket umumnya memiliki harga yang
-              lebih terjangkau dibandingkan dengan knalpot bawaan pabrik (OEM)</p>
-          </div>
-        </a>
-      </article>
-
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img
-            src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full/catalog-image/MTA-105322897/michelin_paket_ban_motor_michelin_pilot_moto_gp_-90-80-14-_-100-80-14-_tubless_ban_motor_matic_vario_beat_scoopy_mio_full02_en6bmjhs.png"
-            class="h-56 w-full object-cover" alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">BAN MICHELIN MOTO GP </h3>
-            <p class="mb-4 text-base font-light"> Ban Michelin dirancang untuk memberikan performa yang optimal di
-              berbagai kondisi lintasan, termasuk trek kering dan basah. Mereka harus mampu memberikan cengkeraman yang
-              baik, stabilitas, dan responsif saat melewati tikungan atau akselerasi di trek lurus. </p>
-          </div>
-        </a>
-      </article>
-
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img
-            src="https://cdn.idntimes.com/content-images/post/20220228/screenshot-2022-02-28-at-15-39-58-tdr-acceleration-package-zozz-for-fazzio-125-e9c1ff1f42aa68ec42ca231abd38d608.png"
-            class="h-56 w-full object-cover" alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">PAKET CVT MOTOR</h3>
-            <p class="mb-4 text-base font-light"> Paket CVT motor dapat menjadi solusi yang praktis dan ekonomis untuk
-              meningkatkan kinerja atau melakukan perawatan pada sistem transmisi CVT sepeda motor. Namun, pemilihan
-              paket yang tepat dan pemasangan yang benar sangatlah penting untuk memastikan hasil yang diinginkan dan
-              menjaga integritas sistem transmisi motor Anda
-            </p>
-
-          </div>
-        </a>
-      </article>
-
-      <article
-        class="mx-auto my-4 flex flex-col overflow-hidden rounded-lg border border-gray-300 bg-white text-gray-900 transition hover:translate-y-2 hover:shadow-lg">
-        <a href="">
-          <img src="https://assets2.rumah-bumn.id/produk/product-15216076253435.jpg" class="h-56 w-full object-cover"
-            alt="" />
-          <div class="flex-auto px-6 py-5">
-            <span class="mb-2 flex items-center text-sm font-semibold">
-              <svg xmlns="http://www.w3.org/2000/svg" class="mr-2 h-4 w-4" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-
-              </svg>
-            </span>
-            <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">OLI MOTOR</h3>
-            <p class="mb-4 text-base font-light"> Oli motor adalah salah satu elemen penting dalam menjaga performa dan
-              umur pakai mesin sepeda motor. Memilih oli yang tepat dan merawatnya dengan baik merupakan langkah penting
-              dalam memastikan kesehatan dan kinerja mesin Anda. </p>
-
-          </div>
-        </a>
-      </article>
-    </div>
+            </svg>
+          </span>
+          <h3 class="mt-4 mb-3 text-xl font-semibold xl:text-2xl">{{ item.nama }}</h3>
+          <p class="mb-4 text-base font-light">{{ item.deskripsi }}</p>
+          <a href="#" @click="openWhatsApp"
+            class="mt-6 inline-block rounded-xl border-2 px-10 py-3 font-semibold border-white hover:bg-white hover:text-blue-600">
+            <span
+              class="inline-block cursor-pointer select-none rounded-full 
+              border border-gray-800 bg-gray-800 px-2 py-1 text-center align-middle
+               text-sm font-semibold leading-normal text-white no-underline shadow-sm">Pembelian Melalui Wa</span>
+          </a>
+        </div>
+      </a>
+    </article>
+  </div>
 </template>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;900&display=swap"
+  rel="stylesheet">
+  </link>
+
+
+<script>
+import { mapActions, mapGetters } from 'vuex';
+
+export default {
+  computed: {
+    ...mapGetters('datauser', ['getDataUser']),
+    ...mapGetters('produk', ['getAllProducts']),
+    ...mapGetters('kontak', ['getDataKontak']),
+    users() {
+      return this.getDataUser;
+    },
+    produk() {
+      return this.getAllProducts.data;
+    },
+    pesan() {
+      return this.getDataKontak;
+    }
+  },
+  methods: {
+    ...mapActions('datauser', ['fetchDataUser']),
+    ...mapActions('produk', ['fetchProducts']),
+    ...mapActions('kontak', ['fetchDataKontak']),
+    openWhatsApp() {
+      // Ganti nomor telepon sesuai dengan nomor tujuan Anda
+      const phoneNumber = "628222314484"; // contoh nomor Indonesia
+      // Pesan yang ingin Anda kirimkan (opsional)
+      const message = "Halo, saya tertarik dengan pembelian melalui WhatsApp.";
+
+      // Buat URL untuk membuka WhatsApp dengan nomor dan pesan yang ditentukan
+      const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      // Buka tautan WhatsApp dalam jendela baru
+      window.open(url, '_blank');
+    }
+  },
+  mounted() {
+    this.fetchDataUser();
+    this.fetchProducts();
+    this.fetchDataKontak();
+  }
+}
+</script>
