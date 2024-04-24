@@ -16,9 +16,7 @@
                     <h3 class="font-medium">{{ }}</h3>
                 </div>
             </ul>
-            <button @click="editProfile"
-                class="mt-3 py-1 px-3 rounded text-sm bg-blue-500 text-white hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 mx-auto block">Edit
-                Profile</button>
+            
         </div>
     </div>
 </template>
